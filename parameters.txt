@@ -1,0 +1,40 @@
+IsMhdGiven true	//дан ли файл mhd
+IsRawBinary true	
+MhdDir D:/GitHub/GaspromLBMCuda/Set	
+InFile mask_100_50_100 KernTest.mhd	
+OutputDir D:/GitHub/GaspromLBMCuda/Results	
+OutputFileName Test_1_.vtk	
+
+
+Method ColourGradient
+cudaBlocks 14
+cudaThreads 28	
+MAXITER 100000 //кол-во итераций
+SAVE 500 
+SAVE_INTEGRALS 100
+
+
+TENSION12 0.026
+TENSION13 0.004
+TENSION23 0.032
+ANGLE12 150
+ANGLE13 30
+ANGLE23 30	
+BETA 0.8
+
+BCOUT None
+BCIN Velocity
+UIN  0.001
+
+Layers 10 20
+
+NUMBER-PHASE 3
+H12 30
+
+MU1 0.003825
+MU2 0.0010068
+MU3 0.00007105
+
+RHO1 850
+RHO2 1006.8
+RHO3 710.5
