@@ -3,3 +3,11 @@
 # Пример ввода
 # яблоки сливы груши персики манго киви апельсины
 # 34 56 23 89 55 32 11
+b=str(input())
+c=str(input())
+a=dict()
+list1=b.split(' ')
+list2=c.split(' ')
+for i in range(len(list1)):
+    a[list1[i]]=list2[i]
+print(a)
